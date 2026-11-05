@@ -1,0 +1,167 @@
+.products-page {
+  min-height: 100vh;
+  padding: 30px 6%;
+  background: #f5faf7;
+  font-family: Arial, sans-serif;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.products-header h1 {
+  color: #087f43;
+  font-size: 30px;
+}
+
+.products-header button {
+  background: #159957;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.products-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.products-controls input,
+.products-controls select {
+  padding: 12px;
+  border: 1px solid #cbded2;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.products-controls input {
+  width: 280px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.product-category {
+  display: inline-block;
+  background: #159957;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.product-card h3 {
+  color: #222;
+  margin: 12px 0 8px;
+}
+
+.product-card h4 {
+  color: #087f43;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  color: #555;
+  margin: 8px 0;
+}
+
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.quantity-controls button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: #159957;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.quantity-controls span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.add-cart-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #087f43;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-cart-button:hover {
+  background: #055c30;
+}
+
+.add-cart-button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.loading-text,
+.empty-text {
+  text-align: center;
+  color: #087f43;
+}
+
+@media (max-width: 600px) {
+  .products-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .products-controls {
+    flex-direction: column;
+  }
+
+  .products-controls input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
