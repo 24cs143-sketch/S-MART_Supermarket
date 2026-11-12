@@ -9,7 +9,7 @@ function AdminOrders({ setPage }) {
     const fetchOrders = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/orders"
+          "https://smart-supermarket-backend.onrender.com/api/orders"
         );
 
         if (!response.ok) {
@@ -44,7 +44,7 @@ function AdminOrders({ setPage }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/orders/${orderId}`,
+        `https://smart-supermarket-backend.onrender.com/api/orders/${orderId}`,
         {
           method: "DELETE",
         }
@@ -74,7 +74,7 @@ function AdminOrders({ setPage }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/orders/${orderId}`,
+        `https://smart-supermarket-backend.onrender.com/api/orders/${orderId}`,
         {
           method: "PATCH",
           headers: {

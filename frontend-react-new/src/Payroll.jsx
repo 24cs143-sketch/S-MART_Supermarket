@@ -17,7 +17,7 @@ function Payroll() {
   // Fetch payroll records from MongoDB
   const fetchPayrollHistory = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/payroll");
+      const response = await fetch("https://smart-supermarket-backend.onrender.com/api/payroll");
 
       if (!response.ok) {
         throw new Error("Failed to fetch payroll records");
@@ -78,7 +78,7 @@ function Payroll() {
     try {
       setSaving(true);
 
-      const response = await fetch("http://localhost:5000/api/payroll", {
+      const response = await fetch("https://smart-supermarket-backend.onrender.com/api/payroll", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

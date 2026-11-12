@@ -13,7 +13,7 @@ import potatoImg from "./assets/potato.jpg";
 import biscuitsImg from "./assets/biscuits.jpg";
 import chipsImg from "./assets/chips.jpg";
 
-const API_URL = "http://localhost:5000/api/products";
+const API_URL = "https://smart-supermarket-backend.onrender.com/api/products";
 
 // ================= DEFAULT PRODUCTS =================
 

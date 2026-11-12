@@ -76,7 +76,7 @@ function Payment({ setPage }) {
   async function sendAdminSMS(order) {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/send-order-sms",
+        "https://smart-supermarket-backend.onrender.com/api/send-order-sms",
         {
           method: "POST",
           headers: {
@@ -150,7 +150,7 @@ function Payment({ setPage }) {
     try {
       // SAVE ORDER TO MONGODB
       const response = await fetch(
-        "http://localhost:5000/api/orders",
+        "https://smart-supermarket-backend.onrender.com/api/orders",
         {
           method: "POST",
           headers: {

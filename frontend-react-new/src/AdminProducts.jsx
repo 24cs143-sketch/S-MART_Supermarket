@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./AdminProducts.css";
 
-const API_URL = "http://localhost:5000/api/products";
+const API_URL = "https://smart-supermarket-backend.onrender.com/api/products";
 
 function AdminProducts({ setPage }) {
   const [products, setProducts] = useState([]);

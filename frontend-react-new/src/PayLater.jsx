@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./paylater.css";
 
-const API_URL = "http://localhost:5000/api/paylater";
+const API_URL = "https://smart-supermarket-backend.onrender.com/api/paylater";
 
 function PayLater() {
   const [customerName, setCustomerName] = useState("");

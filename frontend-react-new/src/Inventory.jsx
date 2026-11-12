@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Inventory.css";
 
-const API_URL = "http://localhost:5000/api/products";
+const API_URL = "https://smart-supermarket-backend.onrender.com/api/products";
 
 function Inventory({ setPage }) {
   const defaultProducts = [
